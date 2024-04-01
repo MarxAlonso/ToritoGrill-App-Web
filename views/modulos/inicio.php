@@ -11,7 +11,7 @@
       <div class="col-md-6 pollito" style="padding: 15px;">
         <img src="views/img/pollo-1.webp" alt="Pollito" class="img-fluid">
       </div>
-      <div class="col-md-6" style="padding: 15px;">
+      <div class="col-md-6" style="margin-top: 20px; padding: 15px;">
         <p style="font-size: 20px;">
           <b>Conócenos</b><br><br><br>
           Iniciamos en el 2013 con una propuesta diferente, <br>
@@ -34,10 +34,22 @@
     <br>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
+<div class="container-fluid px-5" style="padding: 20px;">
+  <div class="row imagen-menu justify-content-center">
+    <div class="col-md-4 text-center item">
+      <img src="views/img/pollo-1.webp" alt="Pollo a la Brasa" class="img-fluid">
+      <h3><b>POLLOS A LA BRASA</b></h3>
+      <p>Nuestro auténtico pollito a la brasa acompañado de papitas amarillas nativas y las cremas de la casa ¡Exquisito! 🍗.</p>
     </div>
+    <div class="col-md-4 text-center item">
+      <img src="views/img/parrilla.webp" alt="Parrilla" class="img-fluid">
+      <h3><b>PARRILLA & CRIOLLOS</b></h3>
+      <p>Pollo, carnes y además una gran variedad de platos criollos y gourmet en un sólo lugar. ¿Te lo vas a perder? 😋</p>
+    </div>
+    <div class="col-md-4 text-center item">
+      <img src="views/img/bar.webp" alt="Tragos" class="img-fluid">
+      <h3><b>BAR & PIQUEOS</b></h3>
+      <p>Tenemos una gran variedad de cocteles de autor y cocteles clásicos con el toque Torito Grill. Además disfruta de los más ricos piqueos.🥵</p>
+    </div>
+  </div>
 </div>

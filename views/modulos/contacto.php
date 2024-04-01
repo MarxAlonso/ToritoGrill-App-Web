@@ -14,7 +14,7 @@
     <section class="contactos p-5" style=" z-index:2;">
         <div class="container-fluid" style="margin-bottom: 15px;">
             <div class="row justify-content-center pregunta">
-                <div class="col-md-8 py-md-5 texto2" style="background-color: #95C1FA; border-top-left-radius:18px; border-bottom-left-radius:18px">
+                <div class="col-md-8 py-md-5 texto2" style="background-color: #FEF3E4; border-top-left-radius:18px; border-bottom-left-radius:18px">
                     <h4 class="text-left titulo-envianos">ENVÍANOS UN MENSAJE</h4><br>
                     <form action="controller/mailcontacto.php" method="post">
                         <div class="row pt-5 justify-content-center">
