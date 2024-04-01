@@ -1,0 +1,76 @@
+body{
+    border: 0;
+    padding: 0;
+}
+
+/* Apartado del menu */
+.navbar{
+    background-color: black;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #862510;
+}
+
+/* Apartado de inicio */
+.fondo-imagen {
+    position: relative;
+    text-align: center;
+  }
+  .pide-aqui {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #862510;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .pide-aqui:hover{
+    background-color: #e7ba24;
+    color: white;
+  }
+
+  .conocenos{
+    padding-left: 27em;
+    padding-right: 24em;
+  }
+
+  .pollito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pollito img {
+    max-width: 100%;
+    height: 25em;
+  }
+  @media (max-width: 768px) {
+    .pollito {
+    margin-top: 20px;
+      height: 25em;
+    }
+  }
+
+  .container-descubre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.descubre{
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: #862510;
+}
