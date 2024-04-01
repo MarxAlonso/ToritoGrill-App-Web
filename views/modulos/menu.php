@@ -1,3 +1,13 @@
+<style>
+    li{
+        font-size: 14px;
+    }
+    @media (max-width: 850px) {
+    li {
+        font-size: 12px;
+      }
+  }
+</style>
 <ul class="nav justify-content-center px-5 bg-black" style="padding-top: 10px; padding-bottom: 10px; border-top: 2px solid white; border-bottom: 2px solid white;">
     <a class="navbar-brand" href="inicio"><img src="views/img/torito-grill.webp" alt="Logo Empresa"></a>
     <li class="nav-item">
