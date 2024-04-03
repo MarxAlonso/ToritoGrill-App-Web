@@ -20,9 +20,9 @@
             <li><a class="active" href="inicio" style="font-size: 13px;">INICIO</a>
             <li><a href="nosotros" style="font-size: 13px;">NOSOTROS</a></li>
             <li><a href="servicios" style="font-size: 13px;">SERVICIOS</a></li>
-            <li><a href="https://outplacementt.blogspot.com/" style="font-size: 16px;">BLOG</a></li>
-            <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;">CONTÁCTANOS </a></li>
+            <li><a href="https://outplacementt.blogspot.com/" style="font-size: 13px;">BLOG</a></li>
             <li><a href="/iboutplacement/estadisticas" style="font-size: 13px;">ESTADÍSTICAS</a></li>
+            <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;">CONTÁCTANOS </a></li>
         </ul>
     </nav>
 </div>
@@ -32,7 +32,7 @@
     navLinks.forEach(function(link) {
         link.addEventListener('mouseover', function() {
             link.style.fontSize = '15px';
-            link.style.color = 'red';
+            link.style.color = '#862510';
             link.style.fontWeight = 'bold';
         });
 
