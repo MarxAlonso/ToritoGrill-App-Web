@@ -2,10 +2,12 @@
 <footer class="footer-tipo" style="background-color: black;">
     <div class="container">
         <div class="row">
-        <div class="footer-col col-sm-6 col-lg-3">
+            <div class="footer-col col-sm-6 col-lg-3">
                 <br>
-                <img src="views/img/torito-grill.webp" width="200" alt="Logo empresa">
-
+                <img src="views/img/torito-grill.webp" width="200" alt="Logo empresa"><br><br>
+                <span style="font-size: 13px; color:white;"><b>Medios de pagos</b></span>
+                <p style="font-size: 13px; color:white;">Aceptamos todos los medios de pago</p>
+                <a href="#" target="_blank" style="text-decoration: none; color: #862510;">Términos y Condiciones</a>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
@@ -15,17 +17,22 @@
                 <a class="menus" href="/iboutplacement/PreguntasFrecuentes" style="font-size: 16px; color:white; margin-bottom: 12px;">Preguntas Frecuentes</a>
                 <a class="menus" href="https://outplacementt.blogspot.com" style="font-size: 16px; color:white; margin-bottom: 12px;">Blog</a>
                 <a class="menus" href="/iboutplacement/estadisticas" style="font-size: 16px; color:white; margin-bottom: 12px;">Estadísticas</a>
-                <a class="menus" href="https://ibjobcoach.com/" style="font-size: 15px; color:white; margin-bottom: 12px;">IBjobcoach</a>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
-                <span style="font-size: 13px; color:white;"> IBCORP SAC RUC 20601399882</span>
+                <span style="font-size: 13px; color:white;">HORARIO DE ATENCION</span>
 
-                <p style="font-size: 13px; color:white;"> cm.outplacement.coaching@corpibgroup.com</p>
+                <p style="font-size: 13px; color:white;"><b>Local 1:</b> Lunes a Vierens de 06:00pm a 11:00pm</p>
 
-                <p style="font-size: 13px; color:white;"> Central Telefónica: (511) 748 5112</p>
+                <p style="font-size: 13px; color:white;"><b>Local 2:</b> Lunes a Viernes de 12:00pm a 11:00pm</p>
 
-                <p style="font-size: 13px; color:white;">Oficina Central: Av. Circunvalación Club Golf los Incas, Torre 3, Nro 208, Oficina 602B , Urb. Club Golf los Incas , Santiago de Surco, Lima, Perú</p>
+                <p style="font-size: 13px; color:white;">Sábados, Domigos y Feriados de 12:00pm a 11:00pm en ambos locales</p>
+
+                <p style="font-size: 13px; color:white;"><b>Números de contacto</b><br>
+                    Whatsapp: 978 105 066 <br>
+                    Fijo local 1: 01 528 9667 <br>
+                    Fijo Local 2: 01 688 4174 <br>
+                    Realizamos delivery</p>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <div class="sociales">
@@ -54,4 +61,5 @@
     new WOW().init();
 </script>
 </body>
+
 </html>
