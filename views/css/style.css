@@ -60,17 +60,25 @@ li a:hover {
 }
 
 .navegaciones ul li a:hover {
-    color: #020202;
+    color: #862510;
     font-weight: 500;
     transition: .3s;
 }
 
 ul li a.contact {
-    background: #c20f0f;
+    background: #862510;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+ul li a.contact:hover {
+    background: #c29f04;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 a.contact {
-    color: black;
+    color: white;
     font-weight: 500;
 }
 
@@ -140,6 +148,22 @@ a.contact {
 /*** FIN NAV DE LOGO Y MENU **/
 
 
+/*Apartado de servicios*/
+
+.consulta{
+    border: 1px solid #862510;
+    background-color: #862510; 
+    border-radius: 20px; 
+    color:white;
+    padding:5px;
+    text-decoration: none;
+}
+.consulta:hover{
+    border: 1px solid #862510;
+    background-color: #fff;
+    color: #862510;
+}
+/*Fin del apartado de servicios*/
 
 
 /* Apartado de inicio */
