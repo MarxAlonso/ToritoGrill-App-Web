@@ -8,7 +8,8 @@
 <section class="conocenos px-4" style="margin-bottom: 50px;">
   <div class="container" style="background-color: #FEF3E4;">
     <div class="row">
-      <div class="col-md-6 pollito" style="padding: 15px;">
+    <br>
+      <div class="col-md-6 pollito" style="padding: 15px; ">
         <img src="views/img/pollo-1.webp" alt="Pollito" class="img-fluid">
       </div>
       <div class="col-md-6" style="margin-top: 20px; padding: 15px;">

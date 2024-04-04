@@ -213,15 +213,27 @@ a.contact {
     align-items: center;
   }
   .pollito img {
-    max-width: 100%;
+    max-width: 90%;
     height: 25em;
     margin-top: 50px;
+    margin-bottom: 50px;
   }
   @media (max-width: 768px) {
     .pollito {
     margin-top: 20px;
       height: 25em;
     }
+    
+  .conocenos{
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+  .pollito img {
+    max-width: 90%;
+    height: 20em;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
   }
 
   .container-descubre{
