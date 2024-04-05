@@ -13,7 +13,7 @@
 <div class="container-fluid" style="margin-bottom: -15px;">
     <div class="row justify-content-center">
         <div class="col-md-4 py-md-5">
-            <img src="views/img/piso2.webp" alt="Piso 2">
+            <img src="views/img/piso2.webp" alt="Piso 2" class="img-fluid">
         </div>
         <div class="col-md-4 py-md-5" >
             <h3 style="margin-top: 30px;"><b>Piso 2:</b></h3><br>
@@ -29,7 +29,7 @@
             <p>Música, cocteles, piqueos, comida y más. Todo en un mismo lugar, celebra con nosotros en nuestro Bar. 🍾</p><br>
         </div>
         <div class="col-md-4 py-md-5" >
-            <img src="views/img/piso3.webp" alt="Piso 3">
+            <img src="views/img/piso3.webp" alt="Piso 3" class="img-fluid">
         </div>
     </div>
 </div>
@@ -37,7 +37,7 @@
 <div class="container-fluid p-5" style="margin-bottom: -15px;">
     <div class="row justify-content-center">
         <div class="col-md-4 py-md-5" >
-            <img src="views/img/piso4.webp" alt="Piso 4">
+            <img src="views/img/piso4.webp" alt="Piso 4" class="img-fluid">
         </div>
         <div class="col-md-4 py-md-5" >
             <h3 style="margin-top: 30px;"><b>Piso 4:</b></h3><br>

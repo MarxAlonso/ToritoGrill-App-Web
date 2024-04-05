@@ -37,18 +37,21 @@
             <div class="footer-col col-sm-6 col-lg-3">
                 <div class="sociales">
                     <br>
-                    <a class="social-icon" style="background-color: #3c70a4; color: white; margin-bottom: 15px;" href="https://www.facebook.com/IBOutplacementOficial"><i class="bi bi-facebook"></i></a>
-                    <a class="social-icon" style="background-color: #000; color: white; margin-bottom: 15px;" href="https://twitter.com/ib_outplacement"><i class="bi bi-twitter-x"></i></a>
-                    <a class="social-icon" style="background-color: #C8062F; color: white; margin-bottom: 15px;" href="https://www.youtube.com/channel/UC9NkcDwe6-P37cHXkn1XBcA/"><i class="bi bi-youtube"></i></a>
-                    <a class="social-icon" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); box-shadow: 0px 3px 10px rgba(0,0,0,.25); color: white; margin-bottom: 15px;" href="https://www.instagram.com/iboutplacement/"><i class="bi bi-instagram"></i></a>
-                    <a class="social-icon" style="background-color: #06A0C8; color: white; margin-bottom: 15px;" href="https://www.linkedin.com/company/iboutplacement"><i class="bi bi-tiktok"></i></a>
+                    <a class="social-icon" style="background-color: #3c70a4; color: white; margin-bottom: 15px; border: 1px solid #fff;" href="https://www.facebook.com/profile.php?id=100063782141554" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a class="social-icon" style="background-color: #39d40a; color: white; margin-bottom: 15px; border: 1px solid #fff;" href="https://wa.link/3mxkpp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    <a class="social-icon" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); box-shadow: 0px 3px 10px rgba(0,0,0,.25); color: white; margin-bottom: 15px; border: 1px solid #fff;" href="https://www.instagram.com/toritogrillperu/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a class="social-icon" style="background-color: #000; color: white; margin-bottom: 15px; border: 1px solid #fff;" href="https://www.tiktok.com/@toritogrillperu" target="_blank"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 
         </div>
     </div>
 </footer>
-
+<div class="container-fluid">
+    <div class="row justify-content-center" style="text-align: center; margin-top: 10px;">
+        <p>©2024 Creador Marx Chipana. All right reserved.</p>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
 <script src="views/js/jquery-3.5.1.min.js"></script>
 <script src="views/js/bootstrap.bundle.js"></script>

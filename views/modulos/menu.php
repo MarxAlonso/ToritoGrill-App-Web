@@ -12,7 +12,7 @@
             <li><a href="nosotros" style="font-size: 13px;"><b>NOSOTROS</b></a></li>
             <li><a href="servicios" style="font-size: 13px;"><b>SERVICIOS</b></a></li>
             <li><a href="https://outplacementt.blogspot.com/" style="font-size: 13px;"><b>BLOG</b></a></li>
-            <li><a href="/iboutplacement/estadisticas" style="font-size: 13px;"><b>ESTADÍSTICAS</b></a></li>
+            <li><a href="locales" style="font-size: 13px;"><b>NUESTROS LOCALES</b></a></li>
             <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
         </ul>
     </nav>
