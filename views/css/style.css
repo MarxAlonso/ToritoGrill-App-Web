@@ -147,6 +147,81 @@ a.contact {
 
 /*** FIN NAV DE LOGO Y MENU **/
 
+/* Apartado de inicio */
+.fondo-imagen2 {
+    position: relative;
+    overflow: hidden;
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/papitas.webp");
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px; /* Añade un espacio superior para dar espacio al contenido en dispositivos móviles */
+    padding-bottom: 50px; /* Añade un espacio inferior para dar espacio al contenido en dispositivos móviles */
+}
+
+.fondo-imagen2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 154, 52, 0.6);
+    z-index: -1;
+}
+
+.fondo-imagen2 h1,
+.fondo-imagen2 p,
+.fondo-imagen2 a {
+    color: white;
+    z-index: 1;
+    margin: 0; 
+}
+
+.fondo-imagen2 h1 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Añade un espacio inferior al título */
+}
+
+.fondo-imagen2 p {
+    font-size: 18px; 
+    margin-bottom: 20px; /* Añade un espacio inferior a los párrafos */
+}
+
+.fondo-imagen2 a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #862510;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.fondo-imagen2 a:hover{
+    background-color: #e7ba24;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .fondo-imagen2{
+        height: 60vh;
+    }
+    .fondo-imagen2 h1 {
+        font-size: 28px; /* Reduce el tamaño del título en dispositivos móviles */
+    }
+    
+    .fondo-imagen2 p {
+        font-size: 16px; /* Reduce el tamaño del texto en dispositivos móviles */
+    }
+
+    .fondo-imagen2 a{
+        font-size: 13px;
+        padding: 5px;
+    }
+}
+
+
 
 /*Apartado de servicios*/
 

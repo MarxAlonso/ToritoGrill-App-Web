@@ -1,14 +1,14 @@
 <section>
-    <div class="fondo-imagen">
-        <img src="views/img/fondo-inicio.webp" class="img-fluid" alt="Fondo de inicio">
-        <a class="pide-aqui" href="contacto"><b>PIDE AQUÍ</b></a>
-    </div>
+  <div class="fondo-imagen">
+    <img src="views/img/fondo-inicio.webp" class="img-fluid" alt="Fondo de inicio">
+    <a class="pide-aqui" href="contacto"><b>PIDE AQUÍ</b></a>
+  </div>
 </section>
 
 <section class="conocenos px-4" style="margin-bottom: 50px;">
   <div class="container" style="background-color: #FEF3E4;">
     <div class="row">
-    <br>
+      <br>
       <div class="col-md-6 pollito" style="padding: 15px; ">
         <img src="views/img/pollo-1.webp" alt="Pollito" class="img-fluid">
       </div>
@@ -29,10 +29,10 @@
 </section>
 
 <div class="container-fluid container-descubre">
-    <div class="row descubre">
-        <p style="margin-top: 10px; text-align: center;">Descubre todo lo que tenemos para ti</p>
-    </div>
-    <br>
+  <div class="row descubre">
+    <p style="margin-top: 10px; text-align: center;">Descubre todo lo que tenemos para ti</p>
+  </div>
+  <br>
 </div>
 
 <div class="container-fluid px-5" style="padding: 20px;">
@@ -54,3 +54,18 @@
     </div>
   </div>
 </div>
+<br>
+<br>
+
+<section class="fondo-imagen2">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-8">
+                <h1 class="mt-4">@TORITOGRILLPERU</h1>
+                <p>Marcando la diferencia y brindándote lo mejor en pollos, parrillas y bar además de una excelente atención desde el año 2016.</p>
+                <p>¿Quieres conocer más sobre Torito Grill?</p>
+                <a href="nosotros" class="btn btn-lg mt-3">CLIC AQUÍ</a>
+            </div>
+        </div>
+    </div>
+</section>
