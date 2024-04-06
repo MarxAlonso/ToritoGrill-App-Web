@@ -238,6 +238,20 @@ a.contact {
     background-color: #fff;
     color: #862510;
 }
+
+.reserva{
+    text-align: center;
+    background-color: #862510;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.reserva:hover{
+    background-color: #e7ba24;
+    color: white;
+}
 /*Fin del apartado de servicios*/
 
 
