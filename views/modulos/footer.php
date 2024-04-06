@@ -56,10 +56,11 @@
 <script src="views/js/jquery-3.5.1.min.js"></script>
 <script src="views/js/bootstrap.bundle.js"></script>
 <script src="views/js/bootstrap.min.js"></script>
+<script src="views/js/seleccionar-imagen.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
-
+<script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
 <script>
     new WOW().init();
 </script>

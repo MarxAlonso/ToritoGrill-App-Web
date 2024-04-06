@@ -1,4 +1,4 @@
-<div class="container-fluid px-5" style="margin-bottom: 30px;">
+<div class="container-fluid px-5" style="margin-bottom: 60px;">
     <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8" style="margin-top: 100px;">
             <h3><b>¿Quiénes somos?</b></h3><br>
@@ -17,11 +17,36 @@
         </div>
     </div>
 </div>
-<div class="container px-5">
-    <div class="row justify-content-center">
-        <div class="col-12 text-center">
-            <h2 style="background-color: #862510; color: white;">¡Conoce a nuestro equipo!</h2>
+<!-- Agrega un modal para mostrar la imagen en grande -->
+<div class="modal fade" id="imagenModal" tabindex="-1" role="dialog" aria-labelledby="imagenModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content bg-none">
+            <div class="modal-body">
+                <img id="imagenGrande" src="" class="img-fluid mx-auto d-block" alt="Imagen en grande">
+            </div>
         </div>
     </div>
 </div>
 
+<!-- Contenedor de las imágenes -->
+<div class="container px-5">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center">
+            <h2 style="background-color: #862510; color: white; padding: 10px;">¡Conoce a nuestro equipo!</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="margin-top: 50px;">
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="views/img/nosotros1.webp" style="cursor: pointer;" class="img-fluid imagen-modal" data-imagen="views/img/nosotros1.webp" alt="Miembro del equipo 1">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="views/img/nosotros2.webp" style="cursor: pointer;" class="img-fluid imagen-modal" data-imagen="views/img/nosotros2.webp" alt="Miembro del equipo 2">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="views/img/nosotros3.webp" style="cursor: pointer;" class="img-fluid imagen-modal" data-imagen="views/img/nosotros3.webp" alt="Miembro del equipo 3">
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+            <img src="views/img/nosotros4.webp" style="cursor: pointer;" class="img-fluid imagen-modal" data-imagen="views/img/nosotros4.webp" alt="Miembro del equipo 4">
+        </div>
+    </div>
+</div>
