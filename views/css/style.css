@@ -272,9 +272,36 @@ a.contact {
     }
   }
 
+/*Inicio apartado de Locales*/
+.enlace-direccion{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #862510;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.8s ease;
+}
 
+.enlace-direccion:hover{
+    background-color: #e7ba24;
+}
 
-  
+.local1{
+    margin-bottom: 100px;
+}
+.local2{
+    margin-bottom: 100px;
+}
+
+@media (max-width:767px) {
+    .local2 {
+        margin-top: 150px;
+    }
+}
+
+/*inicio apartado de footer*/
 .footer {
     padding: 70px 0;
 }

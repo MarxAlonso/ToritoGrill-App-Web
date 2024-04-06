@@ -7,7 +7,7 @@
                 <img src="views/img/torito-grill.webp" width="200" alt="Logo empresa"><br><br>
                 <span style="font-size: 13px; color:white;"><b>Medios de pagos</b></span>
                 <p style="font-size: 13px; color:white;">Aceptamos todos los medios de pago</p>
-                <a href="#" target="_blank" style="text-decoration: none; color: #862510;">Términos y Condiciones</a>
+                <a href="terminos-condiciones" style="text-decoration: none; color: #862510;">Términos y Condiciones</a>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
@@ -60,6 +60,12 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js"></script>
+<script href="views/js/bootstrap.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-12PnpHPfZlDDU+1+AwhEaHzI7v+B3Nu7x6v2WP5a2rw5wr2jtU3RPJ+E7zpcB1B8" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-LFw3A8DizQ7y9yUZeGyDF9+uGpGnQ4Jxk3fxzq8tJ3J3gcGzGFiqLQ9LG6FtfdE7" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
 <script>
     new WOW().init();

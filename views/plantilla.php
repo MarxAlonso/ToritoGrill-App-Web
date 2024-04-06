@@ -10,6 +10,7 @@
 		||$_GET["ruta"] == "nosotros"
 		||$_GET["ruta"] == "servicios"
 		||$_GET["ruta"] == "locales"
+		||$_GET["ruta"] == "carta"
 		||$_GET["ruta"] == "terminos-condiciones"
 		//seguros
 
