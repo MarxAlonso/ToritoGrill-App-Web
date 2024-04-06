@@ -6,7 +6,7 @@
             <p>Queremos ser el restaurante a primera elección en Los Olivos, y en todas partes, donde la comida deliciosa y un servicio excepcional se combinan para crear momentos felices.</p><br>
             <h3 style="margin-top: 30px;"><b>Misión:</b></h3><br>
             <p>En Torito Grill, nuestra misión es simple: servir la mejor comida, las bebidas más deliciosas y brindar la mejor atención. Queremos que cada visita sea especial, que disfrutes de tus platos favoritos, bebidas de alta calidad y que te sientas como en casa. Nuestro equipo está dedicado a hacer que tu estadía sea inolvidable, porque tu satisfacción es nuestra prioridad número uno. Buscamos mejorar constantemente para ofrecer la mejor experiencia culinaria.</p><br>
-            
+
             <h3 style="margin-top: 30px;"><b>Nuestros Valores:</b></h3><br>
             <ol>
                 <li><b>Calidad:</b> Utilizamos los insumos más frescos y de la más alta calidad garantizando así que su estadía sea de total agrado</li>
@@ -50,3 +50,16 @@
         </div>
     </div>
 </div>
+<br>
+<div class="container">
+    <hr style="border: 1px solid #000; margin-bottom: 25px;">
+    <div class="text-center redes">
+        <h2><b>Visita nuestras redes sociales:</b></h2><br>
+        <a href="https://www.facebook.com/people/Torito-Grill/100063782141554/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/toritogrillperu/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@toritogrillperu" target="_blank"><i class="bi bi-tiktok"></i> Tik Tok</a>
+        <a href="https://wa.link/3mxkpp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+    </div>
+    <hr style="border: 1px solid #000;  margin-bottom: 25px;">
+</div>
+<br>

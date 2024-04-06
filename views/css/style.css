@@ -220,7 +220,7 @@ a.contact {
         padding: 5px;
     }
 }
-
+/*Fin apartado de inicio*/
 
 
 /*Apartado de servicios*/
@@ -375,6 +375,36 @@ a.contact {
         margin-top: 150px;
     }
 }
+
+/*inicio apartado de nosotros*/
+.redes {
+    margin-bottom: 25px;
+}
+
+.redes a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;   
+    padding: 5px 20px;
+    margin-left: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:767px) {
+    .redes a{
+        margin-bottom: 20px;
+    }
+}
+
+/*fin apartado de nosotros*/
+
 
 /*inicio apartado de footer*/
 .footer {

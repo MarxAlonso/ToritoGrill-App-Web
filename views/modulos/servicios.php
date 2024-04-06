@@ -45,3 +45,17 @@
         </div>
     </div>
 </div>
+
+<br>
+<div class="container">
+    <hr style="border: 1px solid #000; margin-bottom: 25px;">
+    <div class="text-center redes">
+        <h2><b>Visita nuestras redes sociales:</b></h2><br>
+        <a href="https://www.facebook.com/people/Torito-Grill/100063782141554/" target="_blank"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="https://www.instagram.com/toritogrillperu/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
+        <a href="https://www.tiktok.com/@toritogrillperu" target="_blank"><i class="bi bi-tiktok"></i> Tik Tok</a>
+        <a href="https://wa.link/3mxkpp" target="_blank"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+    </div>
+    <hr style="border: 1px solid #000;  margin-bottom: 25px;">
+</div>
+<br>
