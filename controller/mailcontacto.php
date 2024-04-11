@@ -74,7 +74,7 @@ if ($nombres != null && $celular != null && $email != null && $dni != null && $d
 
       //Content
       $mail->isHTML(true);                                  //Set email format to HTML
-      $mail->Subject = 'IBseguros Formulario Contacto';
+      $mail->Subject = 'Torito Grill Contacto';
       $mail->Body    =  "$fecha <br> <h3>Nombres : $nombres <br>Celular: $celular <br>DNI : $dni <br>Seguro : $tipoSeguro <br> Mensaje : $mensajePersona</h3>";
 
       $mail->send();
