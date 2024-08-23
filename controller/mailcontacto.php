@@ -63,7 +63,7 @@ if ($nombres != null && $celular != null && $email != null && $dni != null && $d
       $mail->SMTPAuth   = true;
      $mail->Host       = 'smtp.gmail.com';
       $mail->Username   = 'marxchip99@gmail.com';
-      $mail->Password   = 'bara cfok gqwg lycu';
+      $mail->Password   = 'qdsmbzeoxzpmxrgv';
       $mail->SMTPSecure = PHPMAiler::ENCRYPTION_SMTPS;
       $mail->Port       = 465;                                //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
