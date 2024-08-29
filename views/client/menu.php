@@ -8,13 +8,12 @@
             <img src="views/img/torito-grill.webp" alt="" class="logo">
         </a>
         <ul>
-            <li><a class="active" href="inicio" style="font-size: 13px;"><b>INICIO</b></a>
-            <li><a href="nosotros" style="font-size: 13px;"><b>NOSOTROS</b></a></li>
-            <li><a href="servicios" style="font-size: 13px;"><b>SERVICIOS</b></a></li>
-            <li><a href="carta" style="font-size: 13px;"><b>CARTA</b></a></li>
+            <li><a class="active" href="cliente" style="font-size: 13px;"><b>CLIENTE</b></a>
+            <li><a href="alquilar" style="font-size: 13px;"><b>ALQUILAR LOCAL</b></a></li>
+            <li><a href="contratos" style="font-size: 13px;"><b>CONTRATOS</b></a></li>
+            <li><a href="platillos" style="font-size: 13px;"><b>PLATILLOS</b></a></li>
             <li><a href="blog" style="font-size: 13px;"><b>BLOG</b></a></li>
-            <li><a href="locales" style="font-size: 13px;"><b>NUESTROS LOCALES</b></a></li>
-            <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
+            <li><a class="contact" href="contactos" style="font-size: 13px; padding: 10px 20px; color: white;"><b>RESERVA AQUI</b></a></li>
         </ul>
     </nav>
 </div>

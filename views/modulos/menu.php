@@ -14,7 +14,7 @@
             <li><a href="carta" style="font-size: 13px;"><b>CARTA</b></a></li>
             <!--<li><a href="blog" style="font-size: 13px;"><b>BLOG</b></a></li>-->
             <li><a href="locales" style="font-size: 13px;"><b>NUESTROS LOCALES</b></a></li>
-            <li><a href="cliente" style="font-size: 13px;"><b>LOGIN</b></a></li>
+            <li><a href="cliente" style="font-size: 13px;"><b>CLIENTE</b></a></li>
             <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
         </ul>
     </nav>

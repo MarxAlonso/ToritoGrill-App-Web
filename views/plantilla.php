@@ -12,7 +12,7 @@
 		||$_GET["ruta"] == "locales"
 		||$_GET["ruta"] == "carta"
 		||$_GET["ruta"] == "terminos-condiciones"
-		||$_GET["ruta"] == "blog"
+		||$_GET["ruta"] == "login"
 		
 		//seguros
 

@@ -6,8 +6,9 @@
 
 
 		if ($_GET["ruta"] == "cliente" 
-		||$_GET["ruta"] == "contacto"
-		||$_GET["ruta"] == "nosotros"
+		||$_GET["ruta"] == "contactos"
+		||$_GET["ruta"] == "alquilar"
+		||$_GET["ruta"] == "platillos"
 		
 		//seguros
 
