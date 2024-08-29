@@ -7,7 +7,7 @@ if (isset($_GET['ruta'])) {
     $rutasPlantilla1 = ["inicio", "contacto", "nosotros", "servicios", "locales", "carta", "terminos-condiciones", "login"];
 
     // Definir rutas que cargan la segunda plantilla (cliente)
-    $rutasPlantilla2 = ["cliente","alquilar","platillos"];
+    $rutasPlantilla2 = ["cliente","alquilar","platillos","contratos"];
 
     // Comprobar si la ruta pertenece a la primera plantilla
     if (in_array($_GET['ruta'], $rutasPlantilla1)) {

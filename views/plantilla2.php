@@ -9,6 +9,7 @@
 		||$_GET["ruta"] == "contactos"
 		||$_GET["ruta"] == "alquilar"
 		||$_GET["ruta"] == "platillos"
+		||$_GET["ruta"] == "contratos"
 		
 		//seguros
 
