@@ -16,7 +16,7 @@
             <path d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z" fill="var(--chevronColor)" />
           </g>
         </svg>
-        Plan for A secure future
+        Plan Torito Grill
         <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.7">
             <path d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z" fill="var(--chevronColor)" />
@@ -28,33 +28,34 @@
           </g>
         </svg>
       </span>
-      <h1 class="cs-title">Elevate Your Performance With Our Leading-Edge Consulting Solutions</h1>
-      <a href="" class="cs-button-solid">Request Appointment</a>
+      <h1 class="cs-title">Eleva Tu Experiencia Gastronómica con ToritoGrill</h1>
+      <a href="contratos" class="cs-button-solid">Contratar Servicios</a>
     </div>
     <ul class="cs-card-group">
       <li class="cs-item">
         <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">100% Success Rate</h3>
+        <h3 class="cs-h3">Variedad de Platos Exquisitos</h3>
         <p class="cs-item-text">
-          We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+          Disfruta de una amplia gama de platillos deliciosos que harán que tus eventos sean inolvidables. En ToritoGrill, nuestra calidad y sabor son incomparables.
         </p>
       </li>
       <li class="cs-item">
         <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">Expert Legal Services</h3>
+        <h3 class="cs-h3">Alquiler de Salones</h3>
         <p class="cs-item-text">
-          We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+          Ofrecemos cómodos y elegantes salones para todo tipo de eventos, desde fiestas familiares hasta reuniones empresariales. Reserva con anticipación y asegúrate de tener el lugar ideal para tu celebración.
         </p>
       </li>
       <li class="cs-item">
         <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">Highly Recommend</h3>
+        <h3 class="cs-h3">Contratación de Servicios</h3>
         <p class="cs-item-text">
-          We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+          Además de alquilar nuestros salones, puedes contratar a nuestros expertos cocineros para tus fiestas privadas y eventos especiales, asegurando un servicio de primera calidad.
         </p>
       </li>
     </ul>
   </div>
+
 
   <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
   <picture class="cs-background">
