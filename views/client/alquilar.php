@@ -16,62 +16,73 @@
             <img class="cs-floater" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-swirl.svg" alt="graphic" loading="lazy" decoding="async" height="710" aria-hidden="true" width="690">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Our Courses</span>
-            <h2 class="cs-title">Stitch Center for Process Safety Training</h2>
+            <span class="cs-topper">Nuestros Servicios</span>
+            <h2 class="cs-title">ToritoGrill - Alquiler de Salones</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum accusantium fuga dolore nulla provident inventore possimus, incidunt, tenetur voluptate laudantium consequuntur commodi. In perferendis quod, non ad veniam similique assumenda deleniti nobis quaerat ipsum cum! Velit provident eligendi cumque excepturi!
+                ToritoGrill es un restaurante con dos locales, cada uno equipado con salas de eventos perfectas para cualquier ocasión. Ya sea una fiesta familiar, un cumpleaños, un matrimonio, o una celebración de quinceañera, nuestros salones están diseñados para satisfacer tus necesidades y hacer que tu evento sea inolvidable.
             </p>
             <ul class="cs-faq-group">
                 <li class="cs-faq-item active">
                     <button class="cs-button">
                         <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/computer-gold.svg" alt="icon" width="32" height="32">
                         <span class="cs-button-text">
-                            On-Demand e-Training
+                            Eventos Familiares
                         </span>
                         <span class="cs-indicator" aria-hidden="true"></span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Nuestros salones están disponibles para reuniones familiares de cualquier tipo. Disponemos de espacios cómodos y adaptables para que puedas disfrutar de momentos especiales con tus seres queridos. Reserva con anticipación para asegurar la disponibilidad.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/calendar-gold.svg" alt="icon" width="32" height="32">
                         <span class="cs-button-text">
-                            Hybrid e-Training
+                            Celebraciones de Cumpleaños
                         </span>
                         <span class="cs-indicator" aria-hidden="true"></span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Celebra tu cumpleaños con nosotros en un ambiente acogedor y festivo. Nuestros salones pueden ser decorados según tu temática y preferencias. Asegúrate de reservar con tiempo para garantizar tu espacio.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold.svg" alt="icon" width="32" height="32">
                         <span class="cs-button-text">
-                            Live Instructor e-Training
+                            Matrimonios y Quinceañeras
                         </span>
                         <span class="cs-indicator" aria-hidden="true"></span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Haz de tu matrimonio o quinceañera un evento especial en ToritoGrill. Nuestros amplios salones ofrecen un entorno elegante para estas ocasiones importantes. Te recomendamos reservar con la mayor anticipación posible para asegurar tu fecha y hora preferida.
                     </p>
                 </li>
                 <li class="cs-faq-item">
                     <button class="cs-button">
                         <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/map-pin-gold-2.svg" alt="icon" width="32" height="32">
                         <span class="cs-button-text">
-                            Onsite Classroom Training
+                            Otros Eventos
                         </span>
                         <span class="cs-indicator" aria-hidden="true"></span>
                     </button>
                     <p class="cs-item-p">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente placeat enim molestias quam, illum ullam ipsa repellat, necessitatibus quis cumque voluptatum nesciunt. Quia possimus est in recusandae saepe nostrum.
+                        Desde reuniones empresariales hasta eventos especiales, nuestros salones están equipados para cualquier ocasión. Contamos con dos ubicaciones convenientes para que elijas la más cercana. Ten en cuenta que la reserva debe hacerse con anticipación para garantizar disponibilidad.
                     </p>
                 </li>
             </ul>
-            <a href="#" class="cs-button-solid" data-bs-toggle="modal" data-bs-target="#formModal">Formulario</a>
+            <p class="cs-text">
+                Ten en cuenta que para reservar un salón, debes hacerlo con suficiente antelación. En caso de que el salón esté ocupado, te informaremos lo antes posible para que puedas planificar en consecuencia.
+            </p>
+            <p class="cs-text">
+                Ubicaciones:
+            <ul>
+                <li><strong>Local 1:</strong> Av. Principal 123, Distrito A</li>
+                <li><strong>Local 2:</strong> Calle Secundaria 456, Distrito B</li>
+            </ul>
+            La disponibilidad de los salones es limitada y la empresa no ofrece servicio de transporte a los locales.
+            </p>
+            <a href="#" class="cs-button-solid" data-bs-toggle="modal" data-bs-target="#formModal">Reserva tu salón</a>
         </div>
     </div>
 </section>
@@ -143,35 +154,35 @@
             const formData = new FormData(form);
 
             fetch('controller/alquilarlocal.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
-                    Swal.fire({
-                        title: 'Éxito',
-                        text: data.message,
-                        icon: 'success',
-                        confirmButtonText: 'Ok'
-                    });
-                } else {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        Swal.fire({
+                            title: 'Éxito',
+                            text: data.message,
+                            icon: 'success',
+                            confirmButtonText: 'Ok'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: data.message,
+                            icon: 'error',
+                            confirmButtonText: 'Ok'
+                        });
+                    }
+                })
+                .catch(error => {
                     Swal.fire({
                         title: 'Error',
-                        text: data.message,
+                        text: 'No se pudo enviar el formulario.',
                         icon: 'error',
                         confirmButtonText: 'Ok'
                     });
-                }
-            })
-            .catch(error => {
-                Swal.fire({
-                    title: 'Error',
-                    text: 'No se pudo enviar el formulario.',
-                    icon: 'error',
-                    confirmButtonText: 'Ok'
                 });
-            });
         });
     });
 </script>
