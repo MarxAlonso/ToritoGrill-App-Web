@@ -3,7 +3,7 @@
 <!--                  Services                    -->
 <!-- ============================================ -->
 
-<section class="container" id="services-1666">
+<section id="services-1666">
     <div class="cs-container">
         <div class="cs-image-group">
             <picture class="cs-picture">

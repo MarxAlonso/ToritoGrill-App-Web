@@ -2,68 +2,81 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1618">
-  <div class="cs-container">
-    <div class="cs-content">
-      <span class="cs-topper">
-        <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.7">
-            <path d="M0.621948 7.49889L6.40262 15L10.343 15L4.56231 7.49889L10.343 -4.2492e-07L6.40262 -2.52681e-07L0.621948 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M7.62195 7.49889L13.4026 15L17.343 15L11.5623 7.49889L17.343 -4.2492e-07L13.4026 -2.52681e-07L7.62195 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M14.7789 7.49889L20.5596 15L24.5 15L18.7193 7.49889L24.5 -4.2492e-07L20.5596 -2.52681e-07L14.7789 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M22.7789 7.49889L28.5596 15L32.5 15L26.7193 7.49889L32.5 -4.2492e-07L28.5596 -2.52681e-07L22.7789 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M30.7789 7.49889L36.5596 15L40.5 15L34.7193 7.49889L40.5 -4.2492e-07L36.5596 -2.52681e-07L30.7789 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M38.7789 7.49889L44.5596 15L48.5 15L42.7193 7.49889L48.5 -4.2492e-07L44.5596 -2.52681e-07L38.7789 7.49889Z" fill="var(--chevronColor)" />
-          </g>
-        </svg>
-        Plan Torito Grill
-        <svg class="cs-chevron" width="49" height="15" viewBox="0 0 49 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.7">
-            <path d="M48.3781 7.49889L42.5974 15L38.657 15L44.4377 7.49889L38.657 -4.2492e-07L42.5974 -2.52681e-07L48.3781 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M41.3781 7.49889L35.5974 15L31.657 15L37.4377 7.49889L31.657 -4.2492e-07L35.5974 -2.52681e-07L41.3781 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M34.2211 7.49889L28.4404 15L24.5 15L30.2807 7.49889L24.5 -4.2492e-07L28.4404 -2.52681e-07L34.2211 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M26.2211 7.49889L20.4404 15L16.5 15L22.2807 7.49889L16.5 -4.2492e-07L20.4404 -2.52681e-07L26.2211 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M18.2211 7.49889L12.4404 15L8.50004 15L14.2807 7.49889L8.50004 -4.2492e-07L12.4404 -2.52681e-07L18.2211 7.49889Z" fill="var(--chevronColor)" />
-            <path d="M10.2211 7.49889L4.4404 15L0.500041 15L6.28071 7.49889L0.500042 -4.2492e-07L4.4404 -2.52681e-07L10.2211 7.49889Z" fill="var(--chevronColor)" />
-          </g>
-        </svg>
-      </span>
-      <h1 class="cs-title">Eleva Tu Experiencia Gastronómica con ToritoGrill</h1>
-      <a href="contratos" class="cs-button-solid">Contratar Servicios</a>
-    </div>
-    <ul class="cs-card-group">
-      <li class="cs-item">
-        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/check-circle.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">Variedad de Platos Exquisitos</h3>
-        <p class="cs-item-text">
+<section id="hero-1618" class="hero-section bg-dark text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Hero Content -->
+      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <h1 id="typed-output" class="display-4 mb-3" style="font-weight: bold;"></h1>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var options = {
+              strings: ["Eleva Tu Experiencia Gastronómica con ToritoGrill"],
+              typeSpeed: 50,
+              backSpeed: 50,
+              backDelay: 1000,
+              startDelay: 500,
+              loop: false // Whether to loop the typing effect
+            };
+
+            var typed = new Typed("#typed-output", options);
+          });
+        </script>
+
+        <p class="lead mb-4 text-black" style="font-weight: bold;">
           Disfruta de una amplia gama de platillos deliciosos que harán que tus eventos sean inolvidables. En ToritoGrill, nuestra calidad y sabor son incomparables.
         </p>
-      </li>
-      <li class="cs-item">
-        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/speedometer.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">Alquiler de Salones</h3>
-        <p class="cs-item-text">
-          Ofrecemos cómodos y elegantes salones para todo tipo de eventos, desde fiestas familiares hasta reuniones empresariales. Reserva con anticipación y asegúrate de tener el lugar ideal para tu celebración.
-        </p>
-      </li>
-      <li class="cs-item">
-        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like.svg" alt="icon" width="48" height="48">
-        <h3 class="cs-h3">Contratación de Servicios</h3>
-        <p class="cs-item-text">
-          Además de alquilar nuestros salones, puedes contratar a nuestros expertos cocineros para tus fiestas privadas y eventos especiales, asegurando un servicio de primera calidad.
-        </p>
-      </li>
-    </ul>
+        <a href="contratos" class="btn btn-primary btn-lg">Contratar Servicios</a>
+      </div>
+      <!-- Hero Image -->
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <img src="views/img/nosotros1.webp" alt="Torito Grill" class="img-fluid rounded shadow-lg">
+        </div>
+      </div>
+    </div>
   </div>
 
-
-  <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-  <picture class="cs-background">
-    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7-m.jpeg">
-    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg">
-    <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg" alt="meeting" width="2250" height="1500" aria-hidden="true">
-  </picture>
+  <!-- Features Section -->
+  <div class="container mt-5">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-check-circle mb-3 text-primary" style="font-size: 2rem;"></i>
+            <h5 class="card-title">Variedad de Platos Exquisitos</h5>
+            <p class="card-text">
+              Disfruta de una amplia gama de platillos deliciosos que harán que tus eventos sean inolvidables. En ToritoGrill, nuestra calidad y sabor son incomparables.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-building mb-3 text-primary" style="font-size: 2rem;"></i>
+            <h5 class="card-title">Alquiler de Salones</h5>
+            <p class="card-text">
+              Ofrecemos cómodos y elegantes salones para todo tipo de eventos, desde fiestas familiares hasta reuniones empresariales. Reserva con anticipación y asegúrate de tener el lugar ideal para tu celebración.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card border-light shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-person-badge mb-3 text-primary" style="font-size: 2rem;"></i>
+            <h5 class="card-title">Contratación de Servicios</h5>
+            <p class="card-text">
+              Además de alquilar nuestros salones, puedes contratar a nuestros expertos cocineros para tus fiestas privadas y eventos especiales, asegurando un servicio de primera calidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
 <br><br>
 <section class="conocenos px-4" style="margin-bottom: 50px;">
   <div class="container" style="background-color: #FEF3E4;">
@@ -129,3 +142,4 @@
     </div>
   </div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
