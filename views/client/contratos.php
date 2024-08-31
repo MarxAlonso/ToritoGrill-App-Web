@@ -2,7 +2,7 @@
 <!--                    Contratos                -->
 <!-- ============================================ -->
 
-<section class="container" id="meet-team-2071">
+<section class="container-fluid" id="meet-team-2071">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Nuestros Servicios</span>
