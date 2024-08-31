@@ -1,3 +1,4 @@
+
 <!-- ============================================ -->
 <!--                  Services                    -->
 <!-- ============================================ -->
@@ -105,7 +106,7 @@
                         <input type="text" class="form-control" id="dni" name="dni" required>
                     </div>
                     <div class="mb-3">
-                        <label for="celular" class="form-label">CELULAR</label>
+                        <label for="celular" class="form-label">Celular</label>
                         <input type="number" class="form-control" id="celular" name="celular" required>
                     </div>
                     <div class="mb-3">
@@ -117,7 +118,7 @@
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="location" class="form-label">Sala</label>
+                        <label for="salas" class="form-label">Sala</label>
                         <select class="form-select" id="salas" name="salas" required>
                             <option value="" disabled selected>Seleccione una Sala</option>
                             <option value="sala1">Sala 1</option>
@@ -133,6 +134,18 @@
                     <div class="mb-3">
                         <label for="peopleCount" class="form-label">Cantidad de Personas</label>
                         <input type="number" class="form-control" id="peopleCount" name="peopleCount" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Fecha del Evento</label>
+                        <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="salas" class="form-label">Turno</label>
+                        <select class="form-select" id="turnos" name="turnos" required>
+                            <option value="" disabled selected>Seleccione un Turno</option>
+                            <option value="turnoTarde">Turno Tarde</option>
+                            <option value="turnoNoche">Turno Noche</option>
+                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
