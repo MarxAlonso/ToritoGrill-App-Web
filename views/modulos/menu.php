@@ -12,7 +12,7 @@
             <li><a href="nosotros" style="font-size: 13px;"><b>NOSOTROS</b></a></li>
             <li><a href="servicios" style="font-size: 13px;"><b>SERVICIOS</b></a></li>
             <li><a href="carta" style="font-size: 13px;"><b>CARTA</b></a></li>
-            <!--<li><a href="blog" style="font-size: 13px;"><b>BLOG</b></a></li>-->
+            <li><a href="platillos" style="font-size: 13px;"><b>PLATILLOS</b></a></li>
             <li><a href="locales" style="font-size: 13px;"><b>NUESTROS LOCALES</b></a></li>
             <li><a href="cliente" style="font-size: 13px;"><b>EVENTOS</b></a></li>
             <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>

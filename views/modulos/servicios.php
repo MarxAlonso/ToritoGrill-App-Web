@@ -74,7 +74,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         <div class="col-md-8 text-center"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
-            <a href="contacto" class="reserva">RESERVA AQUÍ</a>
+            <a href="alquilar" class="reserva">RESERVA AQUÍ</a>
         </div>
     </div>
 </div>

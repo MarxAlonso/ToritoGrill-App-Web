@@ -4,10 +4,10 @@ require_once 'controller/PlantillaController2.php';
 
 if (isset($_GET['ruta'])) {
     // Definir rutas que cargan la primera plantilla
-    $rutasPlantilla1 = ["inicio", "contacto", "nosotros", "servicios", "locales", "carta", "terminos-condiciones", "login"];
+    $rutasPlantilla1 = ["inicio", "contacto", "nosotros", "servicios", "locales", "carta", "terminos-condiciones", "platillos"];
 
     // Definir rutas que cargan la segunda plantilla (cliente)
-    $rutasPlantilla2 = ["cliente","alquilar","platillos","contratos"];
+    $rutasPlantilla2 = ["cliente","alquilar","contratos"];
 
     // Comprobar si la ruta pertenece a la primera plantilla
     if (in_array($_GET['ruta'], $rutasPlantilla1)) {

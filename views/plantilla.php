@@ -13,6 +13,7 @@
 		||$_GET["ruta"] == "carta"
 		||$_GET["ruta"] == "terminos-condiciones"
 		||$_GET["ruta"] == "cliente"
+		||$_GET["ruta"] == "platillos"
 		
 		//seguros
 
