@@ -16,7 +16,7 @@
               backSpeed: 50,
               backDelay: 1000,
               startDelay: 500,
-              loop: false // Whether to loop the typing effect
+              loop: false 
             };
 
             var typed = new Typed("#typed-output", options);
