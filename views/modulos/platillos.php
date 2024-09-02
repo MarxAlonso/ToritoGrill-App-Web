@@ -37,7 +37,6 @@ $result = $conn->query($sql);
         transform: scale(1.02);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         border-color: #ffc107;
-        /* Cambia el color del borde al pasar el mouse */
     }
 
     .modal-content img {
@@ -69,7 +68,12 @@ $result = $conn->query($sql);
     <!-- Buscador -->
     <div class="row mb-4">
         <div class="col-md-6">
-            <input type="text" id="search" class="form-control" placeholder="Buscar platillo por nombre...">
+            <div class="input-group">
+                <input type="text" id="search" class="form-control" placeholder="Buscar platos por nombre">
+                <span class="input-group-text">
+                    <i class="bi bi-search"></i>
+                </span>
+            </div>
         </div>
         <div class="col-md-6 text-end">
             <button id="sortAsc" class="btn btn-warning">Menor Precio</button>
