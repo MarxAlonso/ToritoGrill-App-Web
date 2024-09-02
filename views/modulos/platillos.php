@@ -17,12 +17,14 @@ $result = $conn->query($sql);
 ?>
 <style>
     .menu-item {
-        border: 1px solid #ddd;
+        border: 5px solid #ddd;
         border-radius: 0.5rem;
         overflow: hidden;
         margin-bottom: 1rem;
         cursor: pointer;
-        height: 21vw;
+        height: 390px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        margin-right: 25px;
     }
 
     .menu-item img {
@@ -31,9 +33,22 @@ $result = $conn->query($sql);
         object-fit: cover;
     }
 
+    .menu-item:hover {
+        transform: scale(1.02);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-color: #ffc107;
+        /* Cambia el color del borde al pasar el mouse */
+    }
+
     .modal-content img {
         width: 100%;
         height: auto;
+    }
+
+    @media (max-width: 574px) {
+        .menu-item {
+            height: 400px;
+        }
     }
 </style>
 <div class="container my-4">
@@ -68,8 +83,8 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $modalId = 'menuModal' . $row['id']; // ID único para cada modal
-                echo '<div class="col-md-4 menu-item" data-name="' . htmlspecialchars($row['nombre']) . '" data-price="' . $row['precio'] . '" data-category="' . htmlspecialchars($row['categoria']) . '">';
-                echo '<div class="card" data-bs-toggle="modal" data-bs-target="#' . $modalId . '">';
+                echo '<div class="col-md-4 p-2 menu-item" data-name="' . htmlspecialchars($row['nombre']) . '" data-price="' . $row['precio'] . '" data-category="' . htmlspecialchars($row['categoria']) . '">';
+                echo '<div class="" data-bs-toggle="modal" data-bs-target="#' . $modalId . '">';
                 echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="card-img-top" alt="' . htmlspecialchars($row['nombre']) . '">';
                 echo '<div class="card-body">';
                 echo '<h5 class="card-title">' . htmlspecialchars($row['nombre']) . '</h5>';
@@ -162,8 +177,8 @@ $result = $conn->query($sql);
                 const itemName = item.getAttribute('data-name').toLowerCase();
                 const itemCategory = item.getAttribute('data-category');
 
-                if ((itemName.includes(searchValue)) && 
-                   (selectedCategory === 'all' || itemCategory === selectedCategory)) {
+                if ((itemName.includes(searchValue)) &&
+                    (selectedCategory === 'all' || itemCategory === selectedCategory)) {
                     item.style.display = '';
                 } else {
                     item.style.display = 'none';
