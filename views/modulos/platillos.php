@@ -22,7 +22,7 @@ $result = $conn->query($sql);
         overflow: hidden;
         margin-bottom: 1rem;
         cursor: pointer;
-        height: 370px;
+        height: 21vw;
     }
 
     .menu-item img {
@@ -37,7 +37,19 @@ $result = $conn->query($sql);
     }
 </style>
 <div class="container my-4">
-    <h1 class="mb-4">Platillos de la Carta</h1>
+    <h1 class="mb-4" id="title">Platillos de la Carta</h1>
+
+    <!-- Filtro de Categoría -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <select id="categoryFilter" class="form-select">
+                <option value="all">Todos</option>
+                <option value="Parrilla">Parrilla</option>
+                <option value="Pollos">Pollos</option>
+                <option value="Cocktails">Cocktails</option>
+            </select>
+        </div>
+    </div>
 
     <!-- Buscador -->
     <div class="row mb-4">
@@ -56,19 +68,19 @@ $result = $conn->query($sql);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $modalId = 'menuModal' . $row['id']; // ID único para cada modal
-                echo '<div class="col-md-4 menu-item" data-name="' . htmlspecialchars($row['nombre']) . '" data-price="' . $row['precio'] . '">';
+                echo '<div class="col-md-4 menu-item" data-name="' . htmlspecialchars($row['nombre']) . '" data-price="' . $row['precio'] . '" data-category="' . htmlspecialchars($row['categoria']) . '">';
                 echo '<div class="card" data-bs-toggle="modal" data-bs-target="#' . $modalId . '">';
                 echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="card-img-top" alt="' . htmlspecialchars($row['nombre']) . '">';
                 echo '<div class="card-body">';
                 echo '<h5 class="card-title">' . htmlspecialchars($row['nombre']) . '</h5>';
                 echo '<p class="card-text">' . htmlspecialchars($row['descripcion']) . '</p>';
-                echo '<p class="card-text"> <b>Precio:</b> ' .
-                htmlspecialchars($row['precio']) . '</p>';
+                echo '<p class="card-text"><strong>Categoría:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
+                echo '<p class="card-text"><b>Precio:</b> ' . htmlspecialchars($row['precio']) . '</p>';
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
 
-                // Modal para cada platillo (igual que antes)
+                // Modal para cada platillo
                 echo '<div class="modal fade" id="' . $modalId . '" tabindex="-1" aria-labelledby="' . $modalId . 'Label" aria-hidden="true">';
                 echo '<div class="modal-dialog modal-lg">';
                 echo '<div class="modal-content">';
@@ -80,7 +92,7 @@ $result = $conn->query($sql);
                 echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="img-fluid" alt="' . htmlspecialchars($row['nombre']) . '">';
                 echo '<p><strong>Descripción:</strong> ' . htmlspecialchars($row['descripcion']) . '</p>';
                 echo '<p><strong>Precio:</strong> $' . htmlspecialchars($row['precio']) . '</p>';
-                echo '<p><strong>Categoria:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
+                echo '<p><strong>Categoría:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
                 echo '<p><strong>Contiene:</strong> ' . htmlspecialchars($row['contiene']) . '</p>';
                 echo '<p><strong>Condimentos:</strong> ' . htmlspecialchars($row['condimentos']) . '</p>';
                 echo '<p><strong>Gaseosa de Cortesía:</strong> ' . ($row['gaseosa_cortesia'] ? 'Sí' : 'No') . '</p>';
@@ -99,28 +111,20 @@ $result = $conn->query($sql);
     </div>
 </div>
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('search');
         const sortAscButton = document.getElementById('sortAsc');
         const sortDescButton = document.getElementById('sortDesc');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const title = document.getElementById('title');
         const menuList = document.getElementById('menu-list');
         const menuItems = Array.from(menuList.getElementsByClassName('menu-item'));
 
         // Función para filtrar platillos por nombre
         searchInput.addEventListener('input', function() {
             const searchValue = searchInput.value.toLowerCase();
-            menuItems.forEach(function(item) {
-                const itemName = item.getAttribute('data-name').toLowerCase();
-                if (itemName.includes(searchValue)) {
-                    item.style.display = '';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+            filterAndDisplay();
         });
 
         // Función para ordenar los platillos por precio (ascendente)
@@ -142,5 +146,29 @@ $result = $conn->query($sql);
                 menuList.appendChild(item);
             });
         });
+
+        // Función para filtrar platillos por categoría y nombre
+        categoryFilter.addEventListener('change', function() {
+            const selectedCategory = categoryFilter.value;
+            title.textContent = selectedCategory === 'all' ? 'Platillos de la Carta' : selectedCategory;
+            filterAndDisplay();
+        });
+
+        function filterAndDisplay() {
+            const searchValue = searchInput.value.toLowerCase();
+            const selectedCategory = categoryFilter.value;
+
+            menuItems.forEach(function(item) {
+                const itemName = item.getAttribute('data-name').toLowerCase();
+                const itemCategory = item.getAttribute('data-category');
+
+                if ((itemName.includes(searchValue)) && 
+                   (selectedCategory === 'all' || itemCategory === selectedCategory)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
     });
 </script>
