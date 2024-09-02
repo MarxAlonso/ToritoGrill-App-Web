@@ -22,7 +22,7 @@ $result = $conn->query($sql);
         overflow: hidden;
         margin-bottom: 1rem;
         cursor: pointer;
-        height: 300px;
+        height: 370px;
     }
 
     .menu-item img {
@@ -62,6 +62,8 @@ $result = $conn->query($sql);
                 echo '<div class="card-body">';
                 echo '<h5 class="card-title">' . htmlspecialchars($row['nombre']) . '</h5>';
                 echo '<p class="card-text">' . htmlspecialchars($row['descripcion']) . '</p>';
+                echo '<p class="card-text"> <b>Precio:</b> ' .
+                htmlspecialchars($row['precio']) . '</p>';
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
@@ -78,6 +80,7 @@ $result = $conn->query($sql);
                 echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="img-fluid" alt="' . htmlspecialchars($row['nombre']) . '">';
                 echo '<p><strong>Descripción:</strong> ' . htmlspecialchars($row['descripcion']) . '</p>';
                 echo '<p><strong>Precio:</strong> $' . htmlspecialchars($row['precio']) . '</p>';
+                echo '<p><strong>Categoria:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
                 echo '<p><strong>Contiene:</strong> ' . htmlspecialchars($row['contiene']) . '</p>';
                 echo '<p><strong>Condimentos:</strong> ' . htmlspecialchars($row['condimentos']) . '</p>';
                 echo '<p><strong>Gaseosa de Cortesía:</strong> ' . ($row['gaseosa_cortesia'] ? 'Sí' : 'No') . '</p>';
