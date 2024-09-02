@@ -20,7 +20,7 @@
 
         <!-- Tarjetas de servicio -->
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-5">
                 <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
                     <div class="card-body">
                         <h3 class="card-title text-danger">Contratación de Chefs</h3>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-5">
                 <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
                     <div class="card-body">
                         <h3 class="card-title text-danger">Servicio de Bartender</h3>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <br>
-        <a href="#" style="text-decoration: none; background-color: #dc3545; color:white; border-radius: 10px;" class="cs-button-solid py-3 px-3 mt-3" data-bs-toggle="modal" data-bs-target="#formModal">Reserva tu salón</a>
+        <a href="#" style="text-decoration: none;" class="cs-button-solid py-3 px-3 mt-3 boton-contratar btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">Contratar</a>
     </div>
 </section>
 <!-- Modal -->
