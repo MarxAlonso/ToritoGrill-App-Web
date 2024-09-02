@@ -41,7 +41,7 @@ $result = $conn->query($sql);
 
     <!-- Filtro de Categoría -->
     <div class="row mb-4">
-        <div class="col-md-6">
+        <div class="col-md-2">
             <select id="categoryFilter" class="form-select">
                 <option value="all">Todos</option>
                 <option value="Parrilla">Parrilla</option>
