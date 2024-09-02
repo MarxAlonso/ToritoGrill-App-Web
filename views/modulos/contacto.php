@@ -46,7 +46,7 @@
                             </div>
                             <div class="col-lg-5" style="margin-bottom: 90px;">
                                 <select required class="form-control inp" id="tipoSeguro" name="tipoSeguro" style="background-color: transparent; border-top: none; border-right: none; border-left: none; border-bottom: 2px solid white;">
-                                    <option disabled selected>Local a Alquilar: </option>
+                                    <option disabled selected>Local a tener Informacion: </option>
                                     <option>Local 1</option>
                                     <option>Local 2</option>
                                 </select>

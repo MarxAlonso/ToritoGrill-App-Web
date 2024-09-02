@@ -12,7 +12,7 @@
             <li><a href="alquilar" style="font-size: 13px;"><b>ALQUILAR LOCAL</b></a></li>
             <li><a href="contratos" style="font-size: 13px;"><b>CONTRATOS</b></a></li>
             <li><a href="https://toritogrill-marxdev.blogspot.com/" target="_blank" style="font-size: 13px;"><b>BLOG</b></a></li>
-            <li><a class="contact" href="contactos" style="font-size: 13px; padding: 10px 20px; color: white;"><b>RESERVA AQUI</b></a></li>
+            <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
         </ul>
     </nav>
 </div>
