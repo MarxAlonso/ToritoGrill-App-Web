@@ -15,8 +15,8 @@
                 <a class="menus" href="nosotros" style="font-size: 16px; color:white; margin-bottom: 12px;">Nosotros</a>
                 <a class="menus" href="servicios" style="font-size: 16px; color:white; margin-bottom: 12px;">Servicios</a>
                 <a class="menus" href="locales" style="font-size: 16px; color:white; margin-bottom: 12px;">Nuestro Locales</a>
-                <a class="menus" href="blog" style="font-size: 16px; color:white; margin-bottom: 12px;">Blog</a>
-                <a class="menus" href="contacto" style="font-size: 16px; color:white; margin-bottom: 12px;">Contacto</a>
+                <a class="menus" href="platillos" style="font-size: 16px; color:white; margin-bottom: 12px;">Platillos</a>
+                <a class="menus" href="cliente#services-1666" style="font-size: 16px; color:white; margin-bottom: 12px;">Contacto</a>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>
@@ -67,6 +67,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 <script>
     new WOW().init();
 </script>

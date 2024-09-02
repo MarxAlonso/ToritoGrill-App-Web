@@ -15,8 +15,8 @@
                 <a class="menus" href="nosotros" style="font-size: 16px; color:white; margin-bottom: 12px;">Nosotros</a>
                 <a class="menus" href="servicios" style="font-size: 16px; color:white; margin-bottom: 12px;">Servicios</a>
                 <a class="menus" href="locales" style="font-size: 16px; color:white; margin-bottom: 12px;">Nuestro Locales</a>
-                <a class="menus" href="blog" style="font-size: 16px; color:white; margin-bottom: 12px;">Blog</a>
-                <a class="menus" href="contacto" style="font-size: 16px; color:white; margin-bottom: 12px;">Contacto</a>
+                <a class="menus" href="platillos" style="font-size: 16px; color:white; margin-bottom: 12px;">Platillos</a>
+                <a class="menus" href="cliente#services-1666" style="font-size: 16px; color:white; margin-bottom: 12px;">Contacto</a>
             </div>
             <div class="footer-col col-sm-6 col-lg-3">
                 <br>

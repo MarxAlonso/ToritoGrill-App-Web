@@ -20,21 +20,7 @@
 
         <!-- Tarjetas de servicio -->
         <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
-                    <div class="card-body">
-                        <h3 class="card-title text-danger">Servicio de Envío de Platos</h3>
-                        <div class="mb-3">
-                            <span class="d-block text-muted">Entrega a Domicilio</span>
-                            <span class="d-block text-muted">Reuniones y Eventos</span>
-                        </div>
-                        <p class="card-text">
-                            Selecciona tus platillos favoritos y la cantidad que necesites para tu evento. Nos encargamos de llevar la mejor comida hasta la puerta de tu celebración, garantizando frescura y sabor.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
+            <div class="col-md-6">
                 <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
                     <div class="card-body">
                         <h3 class="card-title text-danger">Contratación de Chefs</h3>
@@ -48,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
+            <div class="col-md-6">
                 <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
                     <div class="card-body">
                         <h3 class="card-title text-danger">Servicio de Bartender</h3>
@@ -62,23 +48,101 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card border-light shadow-sm h-100 transition-transform hover:scale-105">
-                    <div class="card-body">
-                        <h3 class="card-title text-danger">Alquiler de Salas</h3>
-                        <div class="mb-3">
-                            <span class="d-block text-muted">Salas de Eventos</span>
-                            <span class="d-block text-muted">Buffet Incluido</span>
-                        </div>
-                        <p class="card-text">
-                            Alquila nuestras exclusivas salas de cada local para tu evento especial. Incluimos un servicio de buffet personalizado según el acuerdo entre ambas partes, asegurando que cada detalle de tu evento esté cubierto.
-                        </p>
+        </div>
+        <br>
+        <a href="#" style="text-decoration: none; background-color: #dc3545; color:white; border-radius: 10px;" class="cs-button-solid py-3 px-3 mt-3" data-bs-toggle="modal" data-bs-target="#formModal">Reserva tu salón</a>
+    </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Formulario de Contratos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contratoForm" action="controller/contratarservicio.php" method="post">
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres" required>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="dni" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="dni" name="dni" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="number" class="form-control" id="celular" name="celular" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipo" class="form-label">Tipo de Servicio</label>
+                        <select class="form-select" id="tipo" name="tipo" required>
+                            <option value="" disabled selected>Selecciona un servicios</option>
+                            <option value="Contratar Chef">Contratar Chef</option>
+                            <option value="Contratar Bartender">Contratar Bartender</option>
+                        </select>
+                    </div>
+                    <div id="roomOptions" class="mb-3"></div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label">Fecha del Evento</label>
+                        <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>
-</section>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contratoForm');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+
+            fetch('controller/contratarservicio.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        Swal.fire({
+                            title: 'Éxito',
+                            text: data.message,
+                            icon: 'success',
+                            confirmButtonText: 'Ok'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            text: data.message,
+                            icon: 'error',
+                            confirmButtonText: 'Ok'
+                        });
+                    }
+                })
+                .catch(error => {
+                    Swal.fire({
+                        title: 'Error',
+                        text: 'Fecha no disponible',
+                        icon: 'error',
+                        confirmButtonText: 'Ok'
+                    });
+                });
+        });
+    });
+</script>
 
 <!-- CSS adicional -->
 <style>

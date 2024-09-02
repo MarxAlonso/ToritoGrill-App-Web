@@ -8,11 +8,10 @@
             <img src="views/img/torito-grill.webp" alt="" class="logo">
         </a>
         <ul>
-            <li><a class="active" href="cliente" style="font-size: 13px;"><b>CLIENTE</b></a>
-            <li><a href="alquilar" style="font-size: 13px;"><b>ALQUILAR LOCAL</b></a></li>
+            <li><a class="active" href="cliente" style="font-size: 13px;"><b>EVENTOS</b></a>
             <li><a href="contratos" style="font-size: 13px;"><b>CONTRATOS</b></a></li>
             <li><a href="https://toritogrill-marxdev.blogspot.com/" target="_blank" style="font-size: 13px;"><b>BLOG</b></a></li>
-            <li><a class="contact" href="contacto" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
+            <li><a class="contact" href="cliente#services-1666" style="font-size: 13px; padding: 10px 20px; color: white;"><b>CONTÁCTANOS</b></a></li>
         </ul>
     </nav>
 </div>
