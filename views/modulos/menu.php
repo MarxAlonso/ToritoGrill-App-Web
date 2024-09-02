@@ -10,7 +10,6 @@
         <ul>
             <li><a class="active" href="inicio" style="font-size: 13px;"><b>INICIO</b></a>
             <li><a href="nosotros" style="font-size: 13px;"><b>NOSOTROS</b></a></li>
-            <li><a href="servicios" style="font-size: 13px;"><b>SERVICIOS</b></a></li>
             <li><a href="carta" style="font-size: 13px;"><b>CARTA</b></a></li>
             <li><a href="platillos" style="font-size: 13px;"><b>PLATILLOS</b></a></li>
             <li><a href="locales" style="font-size: 13px;"><b>NUESTROS LOCALES</b></a></li>
