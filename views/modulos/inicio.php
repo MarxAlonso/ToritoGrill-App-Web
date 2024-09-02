@@ -1,7 +1,7 @@
 <section>
   <div class="fondo-imagen">
     <img src="views/img/fondo-inicio.webp" class="img-fluid" alt="Fondo de inicio">
-    <a class="pide-aqui" href="contacto"><b>PIDE AQUÍ</b></a>
+    <a class="pide-aqui" target="_blank" href="https://wa.link/3mxkpp"><b>PIDE AQUÍ</b></a>
   </div>
 </section>
 
