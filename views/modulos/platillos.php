@@ -23,15 +23,12 @@ $result = $conn->query($sql);
         margin-bottom: 1rem;
         cursor: pointer;
         height: 300px;
-        /* Altura fija para el card */
     }
 
     .menu-item img {
         width: 100%;
         height: 200px;
-        /* Altura fija para la imagen */
         object-fit: cover;
-        /* Ajusta la imagen para cubrir el contenedor */
     }
 
     .modal-content img {

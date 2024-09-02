@@ -436,11 +436,11 @@
 }
 /* Estilo base para el texto */
 .typewriter {
-  overflow: hidden; /* Ensures the text is hidden until it's fully written */
-  border-right: .15em solid orange; /* The cursor effect */
-  white-space: nowrap; /* Ensures the text does not wrap */
-  margin: 0 auto; /* Centering */
-  letter-spacing: .15em; /* Spacing between letters */
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
 
@@ -490,7 +490,6 @@ body {
 *,
 *:before,
 *:after {
-  /* prevents padding from affecting height and width */
   box-sizing: border-box;
 }
 .cs-topper {

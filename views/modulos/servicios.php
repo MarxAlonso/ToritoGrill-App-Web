@@ -48,7 +48,7 @@
 <br><br>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
+        <div class="col-md-8">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -73,7 +73,7 @@
 <br>
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-8 text-center"> <!-- Ajusta el tamaño de la columna según tus necesidades -->
+        <div class="col-md-8 text-center">
             <a href="alquilar" class="reserva">RESERVA AQUÍ</a>
         </div>
     </div>
