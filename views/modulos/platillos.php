@@ -59,8 +59,14 @@ $result = $conn->query($sql);
             <select id="categoryFilter" class="form-select">
                 <option value="all">Todos</option>
                 <option value="Parrilla">Parrilla</option>
+                <option value="Entradas a la Parrilla">Entradas a la Parrilla</option>
                 <option value="Pollos">Pollos</option>
+                <option value="Gourmet">Gourmet</option>
+                <option value="Criollos">Criollos</option>
+                <option value="Sopas Criollas">Sopas Criollas</option>
                 <option value="Cocktails">Cocktails</option>
+                <option value="Infusiones">Infusiones</option>
+                <option value="Jugos 1 Jarra">Jugos 1 Jarra</option>
             </select>
         </div>
     </div>
