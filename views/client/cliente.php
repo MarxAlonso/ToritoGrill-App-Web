@@ -190,7 +190,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="location" class="form-label">Local</label>
-                        <select class="form-select" id="location" name="location" required>
+                        <select class="form-select" id="local" name="local" required>
                             <option value="" disabled selected>Seleccione un local</option>
                             <option value="local1">Local 1</option>
                             <option value="local2">Local 2</option>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="salas" class="form-label">Sala</label>
-                        <select class="form-select" id="salas" name="salas" required>
+                        <select class="form-select" id="sala" name="sala" required>
                             <option value="" disabled selected>Seleccione una Sala</option>
                             <option value="sala1">Sala 1</option>
                             <option value="sala2">Sala 2</option>
@@ -212,19 +212,11 @@
                     </div>
                     <div class="mb-3">
                         <label for="peopleCount" class="form-label">Cantidad de Personas</label>
-                        <input type="number" class="form-control" id="peopleCount" name="peopleCount" required>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" required>
                     </div>
                     <div class="mb-3">
                         <label for="eventDate" class="form-label">Fecha del Evento</label>
                         <input type="date" class="form-control" id="eventDate" name="eventDate" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="salas" class="form-label">Turno</label>
-                        <select class="form-select" id="turnos" name="turnos" required>
-                            <option value="" disabled selected>Seleccione un Turno</option>
-                            <option value="turnoTarde">Turno Tarde</option>
-                            <option value="turnoNoche">Turno Noche</option>
-                        </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>

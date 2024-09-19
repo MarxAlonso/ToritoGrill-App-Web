@@ -1,4 +1,18 @@
 <?php
+// URL del API de Spring Boot
+$apiUrl = 'http://localhost:8081/api/menus';
+
+// Obtener el contenido de la respuesta del API
+$response = file_get_contents($apiUrl);
+
+// Verificar si la respuesta es válida
+if ($response === FALSE) {
+    die("Error al obtener los datos del menú.");
+}
+
+// Decodificar los datos JSON en un array de PHP
+$menus = json_decode($response, true);
+
 // Conexión a la base de datos
 $servername = "localhost";
 $username = "root";
@@ -7,13 +21,25 @@ $dbname = "toritogrill";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Verificar la conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
 
-// Obtener todos los platillos
-$sql = "SELECT * FROM menus";
-$result = $conn->query($sql);
+// Obtener todas las imágenes desde la base de datos
+$imageQuery = "SELECT id, imagen FROM menus";
+$imageResult = $conn->query($imageQuery);
+
+// Crear un array asociativo para almacenar las imágenes por ID
+$images = [];
+if ($imageResult->num_rows > 0) {
+    while ($imageRow = $imageResult->fetch_assoc()) {
+        $images[$imageRow['id']] = base64_encode($imageRow['imagen']);
+    }
+}
+
+// Cerrar la conexión
+$conn->close();
 ?>
 <style>
     .menu-item {
@@ -90,17 +116,25 @@ $result = $conn->query($sql);
     <div class="row" id="menu-list">
         <!-- Aquí se mostrarán los platillos -->
         <?php
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $modalId = 'menuModal' . $row['id']; // ID único para cada modal
-                echo '<div class="col-md-4 p-2 menu-item" data-name="' . htmlspecialchars($row['nombre']) . '" data-price="' . $row['precio'] . '" data-category="' . htmlspecialchars($row['categoria']) . '">';
+        if (!empty($menus)) {
+            foreach ($menus as $menu) {
+                $modalId = 'menuModal' . $menu['id']; // ID único para cada modal
+                // Obtener la imagen en base64 si existe
+                $imageData = isset($images[$menu['id']]) ? $images[$menu['id']] : '';
+                $imageType = 'image/jpeg'; // Asumimos JPEG por defecto, ajusta según sea necesario
+
+                echo '<div class="col-md-4 p-2 menu-item" data-name="' . htmlspecialchars($menu['nombre']) . '" data-price="' . $menu['precio'] . '" data-category="' . htmlspecialchars($menu['categoria']) . '">';
                 echo '<div class="" data-bs-toggle="modal" data-bs-target="#' . $modalId . '">';
-                echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="card-img-top" alt="' . htmlspecialchars($row['nombre']) . '">';
+                if ($imageData) {
+                    echo '<img src="data:' . $imageType . ';base64,' . $imageData . '" class="card-img-top" alt="' . htmlspecialchars($menu['nombre']) . '">';
+                } else {
+                    echo '<img src="default-image.jpg" class="card-img-top" alt="Imagen no disponible">'; // Imagen por defecto si no hay datos
+                }
                 echo '<div class="card-body">';
-                echo '<h5 class="card-title">' . htmlspecialchars($row['nombre']) . '</h5>';
-                echo '<p class="card-text">' . htmlspecialchars($row['descripcion']) . '</p>';
-                echo '<p class="card-text"><strong>Categoría:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
-                echo '<p class="card-text"><b>Precio:</b> ' . htmlspecialchars($row['precio']) . '</p>';
+                echo '<h5 class="card-title">' . htmlspecialchars($menu['nombre']) . '</h5>';
+                echo '<p class="card-text">' . htmlspecialchars($menu['descripcion']) . '</p>';
+                echo '<p class="card-text"><strong>Categoría:</strong> ' . htmlspecialchars($menu['categoria']) . '</p>';
+                echo '<p class="card-text"><b>Precio:</b> ' . htmlspecialchars($menu['precio']) . '</p>';
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
@@ -110,17 +144,21 @@ $result = $conn->query($sql);
                 echo '<div class="modal-dialog modal-lg">';
                 echo '<div class="modal-content">';
                 echo '<div class="modal-header">';
-                echo '<h5 class="modal-title" id="' . $modalId . 'Label">' . htmlspecialchars($row['nombre']) . '</h5>';
+                echo '<h5 class="modal-title" id="' . $modalId . 'Label">' . htmlspecialchars($menu['nombre']) . '</h5>';
                 echo '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
                 echo '</div>';
                 echo '<div class="modal-body">';
-                echo '<img src="data:image/jpeg;base64,' . base64_encode($row['imagen']) . '" class="img-fluid" alt="' . htmlspecialchars($row['nombre']) . '">';
-                echo '<p><strong>Descripción:</strong> ' . htmlspecialchars($row['descripcion']) . '</p>';
-                echo '<p><strong>Precio:</strong> $' . htmlspecialchars($row['precio']) . '</p>';
-                echo '<p><strong>Categoría:</strong> ' . htmlspecialchars($row['categoria']) . '</p>';
-                echo '<p><strong>Contiene:</strong> ' . htmlspecialchars($row['contiene']) . '</p>';
-                echo '<p><strong>Condimentos:</strong> ' . htmlspecialchars($row['condimentos']) . '</p>';
-                echo '<p><strong>Gaseosa de Cortesía:</strong> ' . ($row['gaseosa_cortesia'] ? 'Sí' : 'No') . '</p>';
+                if ($imageData) {
+                    echo '<img src="data:' . $imageType . ';base64,' . $imageData . '" class="img-fluid" alt="' . htmlspecialchars($menu['nombre']) . '">';
+                } else {
+                    echo '<img src="default-image.jpg" class="img-fluid" alt="Imagen no disponible">'; // Imagen por defecto si no hay datos
+                }
+                echo '<p><strong>Descripción:</strong> ' . htmlspecialchars($menu['descripcion']) . '</p>';
+                echo '<p><strong>Precio:</strong> S/' . htmlspecialchars($menu['precio']) . '</p>';
+                echo '<p><strong>Categoría:</strong> ' . htmlspecialchars($menu['categoria']) . '</p>';
+                echo '<p><strong>Contiene:</strong> ' . htmlspecialchars($menu['contiene']) . '</p>';
+                echo '<p><strong>Condimentos:</strong> ' . htmlspecialchars($menu['condimentos']) . '</p>';
+                echo '<p><strong>Gaseosa de Cortesía:</strong> ' . ($menu['gaseosa_cortesia'] ? 'Sí' : 'No') . '</p>';
                 echo '</div>';
                 echo '<div class="modal-footer">';
                 echo '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>';
@@ -134,6 +172,7 @@ $result = $conn->query($sql);
         }
         ?>
     </div>
+
 </div>
 
 <script>
